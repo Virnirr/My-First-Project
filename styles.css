@@ -1,0 +1,101 @@
+body {
+    font-family: tisa;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.navbar-nav.navbar-center {
+    position: relative;
+    left: 40%;
+    transform: translatex(-40%)
+}
+
+.navbar-nav li{
+    width: 200px;
+    text-align: left;
+}
+
+main, .jumbotron {
+    background-color: #E3BD8C;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
+
+section {
+    padding: 20px;
+}
+
+.table {
+    position: relative;
+    width: 75%;
+    left: 13%;
+    empty-cells: hide;
+}
+
+.table tr {
+    
+    border: 2px solid black;
+}
+
+#crew .table tr, #crew .table tr td{
+    position: relative;
+    border: 2px solid #3DBBFF;
+}
+
+.table-content {
+    background-color: #3DBBFF;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 5px;
+    
+}
+
+.flexbox-item {
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.flexbox-item-1 {
+    flex-shrink: 0;
+}
+
+.flexbox-item-2 {
+    flex-shrink: 1;
+    flex-grow: 1;
+    letter-spacing: 1px;
+    line-height: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .flexbox-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  
+  .flexbox-item-1, .flexbox-item-2 {
+    align-items: center;
+    width: 100%;
+  }
+  
+  #skills {
+      padding-bottom: 20px;
+  }
+  main {
+      padding-bottom: 5px;
+  }
+}
